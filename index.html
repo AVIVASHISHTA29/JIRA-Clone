@@ -7,26 +7,26 @@
     <title>Kanban Board</title>
   </head>
   <body>
-    <button class="add-task-btn">Add Task</button>
+    <button class="add-task-btn">Open Modal</button>
     <div class="container">
-      <div class="column" id="not-started">
+      <div class="column">
         <h3>Not Started</h3>
-        <ul class="task-list"></ul>
+        <ul class="task-list" id="not-started"></ul>
       </div>
-      <div class="column" id="in-progress">
+      <div class="column">
         <h3>In Progress</h3>
-        <ul class="task-list"></ul>
+        <ul class="task-list" id="in-progress"></ul>
       </div>
-      <div class="column" id="completed">
+      <div class="column">
         <h3>Completed</h3>
-        <ul class="task-list"></ul>
+        <ul class="task-list" id="completed"></ul>
       </div>
     </div>
 
     <!-- Modal -->
     <div class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close">X</span>
         <form id="add-task-form">
           <label for="task-name">Task Name:</label>
           <input type="text" id="task-name" required />
@@ -48,7 +48,7 @@
             <option value="completed">Completed</option>
           </select>
 
-          <button type="submit">Add Task</button>
+          <button id="add-task-btn">Add Task</button>
         </form>
       </div>
     </div>
