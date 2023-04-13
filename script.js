@@ -31,7 +31,6 @@ function addTask(taskName, priority, dueDate, status) {
   if (status == "not-started") {
     // add it in the column of not started
     var list = document.getElementById("not-started");
-
     list.innerHTML += `
                         <li>
                           <p>${taskName}</p>
@@ -45,4 +44,13 @@ function addTask(taskName, priority, dueDate, status) {
   } else if (status == "completed") {
     // add it in the column of completed
   }
+
+  // After successfully added ->
+
+  // document.getElementById("task-name").value = "";
+  // document.getElementById("priority").value = "";
+  // document.getElementById("due-date").value = "";
+  // document.getElementById("status").value = "";
+
+  document.getElementById("add-task-form").reset();
 }
